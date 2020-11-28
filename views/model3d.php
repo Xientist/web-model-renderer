@@ -20,7 +20,7 @@
     controls.update();
 
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('black');
+    scene.background = new THREE.Color(0x070710);
 
     {
         const color = 0xFFFFFF;
@@ -30,8 +30,6 @@
         scene.add(light);
         scene.add(light.target);
     }
-
-    
 
     const gltfLoader = new GLTFLoader();
     gltfLoader.load('./resources/rocket.glb', (gltf) => {
